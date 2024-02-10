@@ -75,9 +75,12 @@
     </audio>
 
     <script>
-        window.addEventListener('load', function() {
+    
+        document.body.addEventListener('click', function() {
             var audio = document.getElementById('birthdayAudio');
             audio.play();
+            // Remove event listener after first click
+            document.body.removeEventListener('click', arguments.callee);
         });
     </script>
 </body>
