@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url("https://media1.tenor.com/m/njw91D9-uRkAAAAC/confetti-sparkle.gif");
+        }
+        .container {
+            background-image: url("https://media1.tenor.com/m/OgZ5p6FbeOwAAAAC/%CE%BA%CE%BF%CF%81%CE%B4%CE%B5%CE%BB%CE%B5%CF%83.gif");
+            background-size: cover;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #f1f4f6d1;
+            background-color: rgba(0, 0, 255, 0.268);
+            border-radius: 25px;
+        }
+        p {
+            color: #00114b;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .quote {
+            font-style: italic;
+            color: #f16690;
+            background-color: lightblue;
+            margin-top: 20px;
+            border-radius: 25px;
+        }
+        .photos {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .photos img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 10px;
+            border: 3px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, Pancha Linga!</h1>
+        <div class="photos">
+            <img src="Screenshot_2024-02-10_19-28-58.png" alt="Photo 1">
+            <img src= "https://res.cloudinary.com/insignia-flowera-in/images/f_auto,q_auto/v1688048048/Heart-Shape-Red-velvet-cake_7190e7cfa/Heart-Shape-Red-velvet-cake_7190e7cfa.jpg" alt="Photo 2">
+            <!-- Add more photos as needed -->
+        </div>
+        <p>Wishing you a day filled with love, laughter, and all the happiness in the world. May this year bring you endless joy and success!</p>
+        <p class="quote">"The more you praise and celebrate your life, the more there is in life to celebrate." - Jagadeesh</p>
+    </div>
+
+    <audio id="birthdayAudio">
+        <source src="pancha.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('birthdayAudio');
+            audio.play();
+        });
+    </script>
+</body>
+</html>
