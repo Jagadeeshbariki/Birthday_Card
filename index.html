@@ -15,11 +15,12 @@
             height: 100vh;
             margin: 0;
             background-image: url("https://media1.tenor.com/m/njw91D9-uRkAAAAC/confetti-sparkle.gif");
+            overflow-x: hidden;
         }
         .container {
-            background-image: url("https://media1.tenor.com/m/OgZ5p6FbeOwAAAAC/%CE%BA%CE%BF%CF%81%CE%B4%CE%B5%CE%BB%CE%B5%CF%83.gif");
+            background-image: url("https://cdn3.vectorstock.com/i/1000x1000/31/47/glossy-happy-birthday-balloons-background-vector-20203147.jpg");
             background-size: cover;
-            max-width: 600px;
+            max-width: 45%;
             padding: 20px;
             background-color: #fff;
             border-radius: 10px;
@@ -55,30 +56,76 @@
             border: 3px solid #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        #heading{
+            background-image: url("https://media.tenor.com/szjn1Pvcpl4AAAAM/geometry-abstract.gif");
+            background-size: contain;
+            position: ;
+            color: transparent;
+            background-clip: text;
+            font-size:50px;
+            font-weight: 900;
+        }
+        .container p{
+            background-image: url("https://media.tenor.com/IXezQJOelhIAAAAM/splashing-color-gifkaro.gif");
+            background-size: contain;
+            color: transparent;
+            background-clip: text;
+            font-size:25px;
+            font-weight: 500;
+            padding: 0 15%;
+        }
+        #img{
+            position: absolute;
+            bottom:0px;
+            left:0px
+        }
+        #img1{
+            position: absolute;
+            bottom:0px;
+            right:0px;
+           transform: scaleX(-1);
+        }
+
     </style>
 </head>
 <body>
+    <div class="blust">
+        <img src="https://media.tenor.com/qg8K8VOmzJwAAAAj/party-popper-confetti.gif" alt="" id="img">
+
+    </div>
+    <div class="paper">
+        <img src="https://media.tenor.com/ZoZqWaSnN5UAAAAj/diwali-sparkles-stars.gif" alt="">
+    </div>
+
     <div class="container">
-        <h1>Happy Birthday, Pancha Linga!</h1>
+        <p id="heading">Happy Birthday, Ramu!</p>
         <div class="photos">
-            <img src="Screenshot_2024-02-10_19-28-58.png" alt="Photo 1">
-            <img src= "https://res.cloudinary.com/insignia-flowera-in/images/f_auto,q_auto/v1688048048/Heart-Shape-Red-velvet-cake_7190e7cfa/Heart-Shape-Red-velvet-cake_7190e7cfa.jpg" alt="Photo 2">
+            <img src="https://media-tir3-1.cdn.whatsapp.net/v/t61.24694-24/394245581_390503216806386_3743550282008234808_n.jpg?ccb=11-4&oh=01_AdSsJzRGaTlZcgYzmtRfGEA9yutosT-5BwDWk5cQ4XYHFg&oe=65D7509D&_nc_sid=e6ed6c&_nc_cat=108" alt="Photo 1">
+            <img src= "Remo.png" alt="Photo 2">
             <!-- Add more photos as needed -->
         </div>
         <p>Wishing you a day filled with love, laughter, and all the happiness in the world. May this year bring you endless joy and success!</p>
         <p class="quote">"The more you praise and celebrate your life, the more there is in life to celebrate." - Jagadeesh</p>
+    </div>
+    <div class="paper">
+        <img src="https://media.tenor.com/ZoZqWaSnN5UAAAAj/diwali-sparkles-stars.gif" alt="">
     </div>
 
     <audio id="birthdayAudio" loop>
         <source src="pancha.mp3" type="audio/mpeg">
         Your browser does not support the audio element.    
     </audio>
+    <div class="blust">
+        <img src="https://media.tenor.com/qg8K8VOmzJwAAAAj/party-popper-confetti.gif" alt="" id="img1">
+
+    </div>
 
     <script>
     
         document.body.addEventListener('click', function() {
             var audio = document.getElementById('birthdayAudio');
             audio.play();
+            var paper = document.getElementsByClassName('paper').style.
             // Remove event listener after first click
             document.body.removeEventListener('click', arguments.callee);
         });
