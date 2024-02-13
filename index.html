@@ -9,18 +9,13 @@
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
             text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
             background-image: url("https://media1.tenor.com/m/njw91D9-uRkAAAAC/confetti-sparkle.gif");
-            overflow-x: hidden;
         }
         .container {
             background-image: url("https://c0.wallpaperflare.com/preview/203/798/484/background-image-flower-flowers-purple.jpg");
             background-size: cover;
-            max-width: 750px;
             padding: 20px;
             background-color: #fff;
             border-radius: 10px;
@@ -59,7 +54,6 @@
         #heading{
             background-image: url("https://media.tenor.com/I1uKTqRLFyEAAAAM/%CF%86%CF%89%CF%84%CE%B9%CE%AC-%CE%BC.gif");
             background-size: contain;
-            position: ;
             color: transparent;
             background-clip: text;
             font-size:50px;
@@ -86,6 +80,7 @@
            transform: scaleX(-1);
         }
 
+        /* Media query for mobile devices */
         @media only screen and (max-width: 600px) {
             .container {
                 padding: 10px;
@@ -104,15 +99,11 @@
                 font-size: 14px;
             }
         }
-
-        
-
     </style>
 </head>
 <body>
     <div class="blust">
         <img src="https://media.tenor.com/qg8K8VOmzJwAAAAj/party-popper-confetti.gif" alt="" id="img">
-
     </div>
     <div class="paper">
         <img src="https://media.tenor.com/ZoZqWaSnN5UAAAAj/diwali-sparkles-stars.gif" alt="">
@@ -138,15 +129,12 @@
     </audio>
     <div class="blust">
         <img src="https://media.tenor.com/qg8K8VOmzJwAAAAj/party-popper-confetti.gif" alt="" id="img1">
-
     </div>
 
     <script>
-    
         document.body.addEventListener('click', function() {
             var audio = document.getElementById('birthdayAudio');
             audio.play();
-            var paper = document.getElementsByClassName('paper').style.
             // Remove event listener after first click
             document.body.removeEventListener('click', arguments.callee);
         });
